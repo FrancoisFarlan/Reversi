@@ -1,6 +1,6 @@
 package fr.eni.ecole.reversi;
 
-public enum Pion {
+public enum Pion implements Affichable {
 
 	NOIR, BLANC, LIBRE;
 	private int nbPions = 2;
@@ -14,6 +14,7 @@ public enum Pion {
 		this.nbPions = nbPions; 
 	}
 	
+	@Override
 	public char getSymbole() {
 		char symbole;
 		switch (this) {
